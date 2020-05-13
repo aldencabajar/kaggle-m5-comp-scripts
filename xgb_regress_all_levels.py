@@ -51,7 +51,7 @@ def feature_gen(lag_arr, id_, lvl) :
         snap = 'snap_all'
     
     if lvl >= 11:
-        new_var_list = var_list +[snap] + [agg_id]
+        new_var_list = var_list +[snap] + [id_]
     else:
         new_var_list = var_list + [snap]
     

@@ -6,3 +6,10 @@ feature_gen:
 
 xgb_regress:
 	nohup python3 xgb_regress_all_levels.py > xgb_regress_all_levels.txt & 
+
+submit_prep:
+	nohup python3 submission_preparation.py > submission_preparation.txt & 
+
+submit_kaggle:
+	kaggle competitions submit -c m5-forecasting-uncertainty -f submission.csv -m "Message"
+	
